@@ -1,0 +1,11 @@
+Question 4 : Gradient of Function f=(x^2)(y) + (y^3)(sin(x))
+
+grad(f)=(d/dx i + d/dy j + d/dz k)*(f)
+grad(f)=(d/dx i + d/dy j + d/dz k)*(x^2)(y) + (y^3)(sin(x))
+grad(f)=d/dx((x^2)(y) + (y^3)(sin(x)) i + d/dy((x^2)(y)) + (y^3)(sin(x)) j + d/dz((x^2)(y) + (y^3)(sin(x)) k
+grad(f)=(2x+(y^3)(cosx)) i + (x^2+ 3(y^2)sinx) j
+
+For Example:
+grad(f)(1,2)=(2(1)+((2)^3)(cos(1)) i + ((1)^2+ 3((2)^2)sin(1)) j
+grad(f)(1,2)=(2+(8)*(0.5403) i + (1+12(0.8415)) j
+grad(f)(1,2)=8.3224 i + 11.0976 j

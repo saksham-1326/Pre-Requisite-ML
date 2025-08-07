@@ -1,0 +1,11 @@
+Question 1:How many multiplications and additions do you need to perform a matrix multiplication between a (n, k) and (k, m) matrix? Explain.
+
+->let us assume matrix multiplication of two matrices A(n,k) and B(k,m) is to be done and Answer matrix is ANS(row,col)
+    ->Now value of row and column of answer matrix will be number of Row of first matrix and numbers of column of second matrix respectively
+    ->Means ANS(n,m) {Contains 'n' rows and 'm' columns and "n*m" elements}
+    ->And matrix multiplication can be done if and only if value of numbers of column of first matrix and value of rows of second matrix is         same
+->Now let us calculate 1st value(0,0) of ANS matrix
+    -> ANS[0][0]= A[0][0]*B[0][0] + A[0][1]*B[1][0] + A[0][2]*B[2][0] + ........ + A[0][k-1]*B[k-1][0] (Here total K numbers are there so            indices will very from 0->k-1)
+    -> Now Total number of elements in answer matrix is (n*m);
+    -> Here we can observe that Addition is done (k-1) times and multiplication is done total K times
+    -> So, for entire matrix, Addition will be done n*m*(k-1) times and MULTIPLICATION will be done (n*m*k) times
